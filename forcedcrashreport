@@ -1,0 +1,116 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  Inventory Tweaks Coremod (InventoryTweaks-1.64-dev.jar)
+  BetterSprintingCore (BetterSprinting++MC-1.12.2++v2.1.1.jar)
+Contact their authors BEFORE contacting forge
+
+// Oops.
+
+Time: 1/21/19 1:21 PM
+Description: Manually triggered debug crash
+
+java.lang.Throwable
+	at net.minecraft.client.Minecraft.func_184118_az(Minecraft.java:1923)
+	at net.minecraft.client.Minecraft.func_71407_l(Minecraft.java:1806)
+	at net.minecraft.client.Minecraft.func_71411_J(Minecraft.java:1096)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:397)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Client thread
+Stacktrace:
+	at net.minecraft.client.Minecraft.func_184118_az(Minecraft.java:1923)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityPlayerSP['PrimarinaChan'/556090, l='MpServer', x=-1154.48, y=65.00, z=7339.40]]
+	Chunk stats: MultiplayerChunkCache: 81, 81
+	Level seed: 0
+	Level generator: ID 08 - default_1_1, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (54,117,-890), Chunk: (at 6,7,6 in 3,-56; contains blocks 48,0,-896 to 63,255,-881), Region: (0,-2; contains chunks 0,-64 to 31,-33, blocks 0,0,-1024 to 511,255,-513)
+	Level time: 805944533 game time, 339428556 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 111 total; [EntityPixelmon['Chinchou'/556559, l='MpServer', x=-1119.28, y=46.93, z=7299.02], EntityPixelmon['Magikarp'/556824, l='MpServer', x=-1185.37, y=47.00, z=7362.96], EntityPixelmon['Magikarp'/556825, l='MpServer', x=-1179.16, y=47.00, z=7356.25], EntityPixelmon['Magikarp'/556826, l='MpServer', x=-1187.74, y=47.00, z=7364.13], EntityPixelmon['Magikarp'/556827, l='MpServer', x=-1181.76, y=47.00, z=7369.67], EntityPlayerSP['PrimarinaChan'/556090, l='MpServer', x=-1154.48, y=65.00, z=7339.40], EntityPixelmon['Goldeen'/556564, l='MpServer', x=-1118.15, y=49.82, z=7299.95], EntityPixelmon['Goldeen'/556566, l='MpServer', x=-1111.29, y=49.43, z=7295.99], EntityPixelmon['Magikarp'/556823, l='MpServer', x=-1179.35, y=47.00, z=7374.55], EntityPixelmon['Pupitar'/556583, l='MpServer', x=-1140.50, y=26.00, z=7371.50], EntityPixelmon['Crawdaunt'/557397, l='MpServer', x=-1139.50, y=63.00, z=7312.50], EntityItemFrame['entity.ItemFrame.name'/556136, l='MpServer', x=-1133.50, y=63.50, z=7354.97], EntityPixelmon['Squirtle'/558184, l='MpServer', x=-1197.50, y=63.00, z=7330.50], EntityItemFrame['entity.ItemFrame.name'/556137, l='MpServer', x=-1134.50, y=63.50, z=7354.97], EntityPixelmon['Slowpoke'/557417, l='MpServer', x=-1192.50, y=63.00, z=7339.50], EntityItemFrame['entity.ItemFrame.name'/556138, l='MpServer', x=-1135.50, y=63.50, z=7354.97], EntityPixelmon['Shellos'/557418, l='MpServer', x=-1191.50, y=63.00, z=7338.50], EntityMinecartChest['Minecart with Chest'/556139, l='MpServer', x=-1131.30, y=64.06, z=7349.50], EntityMinecartChest['Minecart with Chest'/556140, l='MpServer', x=-1135.50, y=64.06, z=7347.50], EntityItemFrame['entity.ItemFrame.name'/556141, l='MpServer', x=-1133.50, y=66.50, z=7353.97], EntityItemFrame['entity.ItemFrame.name'/556142, l='MpServer', x=-1135.50, y=66.50, z=7353.97], EntityMinecartChest['Minecart with Chest'/556143, l='MpServer', x=-1133.40, y=65.06, z=7348.50], EntityStatue['Tirtouga'/556131, l='MpServer', x=-1153.50, y=64.00, z=7318.52], EntityStatue['Kabuto'/556132, l='MpServer', x=-1153.41, y=69.00, z=7318.56], EntityStatue['Wailord'/556133, l='MpServer', x=-1188.78, y=66.00, z=7315.75], EntityItemFrame['entity.ItemFrame.name'/556135, l='MpServer', x=-1132.50, y=63.50, z=7354.97], EntityItemFrame['entity.ItemFrame.name'/556152, l='MpServer', x=-1137.97, y=65.50, z=7349.50], EntityItemFrame['entity.ItemFrame.name'/556153, l='MpServer', x=-1137.97, y=64.50, z=7349.50], EntityItemFrame['entity.ItemFrame.name'/556154, l='MpServer', x=-1137.50, y=66.50, z=7353.97], EntityArmorStand['Armor Stand'/556155, l='MpServer', x=-1127.50, y=63.06, z=7341.00], EntityArmorStand['Armor Stand'/556156, l='MpServer', x=-1127.50, y=63.06, z=7342.00], EntityArmorStand['Armor Stand'/556157, l='MpServer', x=-1129.50, y=63.00, z=7343.50], EntityArmorStand['Armor Stand'/556158, l='MpServer', x=-1132.50, y=61.63, z=7338.50], EntityArmorStand['Armor Stand'/556159, l='MpServer', x=-1131.50, y=61.63, z=7338.50], EntityItemFrame['entity.ItemFrame.name'/556144, l='MpServer', x=-1137.50, y=63.50, z=7354.97], EntityItemFrame['entity.ItemFrame.name'/556145, l='MpServer', x=-1137.97, y=63.50, z=7348.50], EntityItemFrame['entity.ItemFrame.name'/556146, l='MpServer', x=-1137.97, y=63.50, z=7349.50], EntityItemFrame['entity.ItemFrame.name'/556147, l='MpServer', x=-1136.50, y=63.50, z=7354.97], EntityItemFrame['entity.ItemFrame.name'/556148, l='MpServer', x=-1137.97, y=66.50, z=7348.50], EntityItemFrame['entity.ItemFrame.name'/556149, l='MpServer', x=-1137.97, y=65.50, z=7348.50], EntityItemFrame['entity.ItemFrame.name'/556150, l='MpServer', x=-1137.97, y=64.50, z=7348.50], EntityItemFrame['entity.ItemFrame.name'/556151, l='MpServer', x=-1137.97, y=66.50, z=7349.50], EntityStatue['Smoochum'/556168, l='MpServer', x=-1160.22, y=66.00, z=7359.76], EntityStatue['Shuppet'/556169, l='MpServer', x=-1165.65, y=67.00, z=7353.63], EntityStatue['Primarina'/556170, l='MpServer', x=-1157.40, y=65.00, z=7359.30], EntityStatue['Brionne'/556171, l='MpServer', x=-1157.69, y=65.00, z=7354.20], EntityStatue['Popplio'/556172, l='MpServer', x=-1157.59, y=65.00, z=7352.94], EntityItemFrame['entity.ItemFrame.name'/556173, l='MpServer', x=-1170.03, y=65.50, z=7349.50], EntityItemFrame['entity.ItemFrame.name'/556174, l='MpServer', x=-1170.03, y=66.50, z=7349.50], EntityItemFrame['entity.ItemFrame.name'/556175, l='MpServer', x=-1170.03, y=66.50, z=7351.50], EntityArmorStand['Armor Stand'/556160, l='MpServer', x=-1132.00, y=61.63, z=7338.50], EntityArmorStand['Armor Stand'/556161, l='MpServer', x=-1130.75, y=62.75, z=7338.50], EntityStatue['Arbok'/556162, l='MpServer', x=-1164.44, y=46.00, z=7356.50], EntityStatue['Cradily'/556163, l='MpServer', x=-1162.82, y=70.00, z=7356.46], EntityItemFrame['entity.ItemFrame.name'/556164, l='MpServer', x=-1163.97, y=67.50, z=7355.50], EntityStatue['Sylveon'/556165, l='MpServer', x=-1162.38, y=66.00, z=7359.47], EntityItemFrame['entity.ItemFrame.name'/556166, l='MpServer', x=-1167.50, y=67.50, z=7354.03], EntityItemFrame['entity.ItemFrame.name'/556167, l='MpServer', x=-1167.50, y=66.50, z=7354.03], EntityItemFrame['entity.ItemFrame.name'/556184, l='MpServer', x=-1172.97, y=66.50, z=7348.50], EntityItemFrame['entity.ItemFrame.name'/556185, l='MpServer', x=-1172.97, y=65.50, z=7348.50], EntityItemFrame['entity.ItemFrame.name'/556186, l='MpServer', x=-1172.97, y=67.50, z=7347.50], EntityItemFrame['entity.ItemFrame.name'/556187, l='MpServer', x=-1172.97, y=66.50, z=7347.50], EntityItemFrame['entity.ItemFrame.name'/556188, l='MpServer', x=-1172.97, y=67.50, z=7346.50], EntityItemFrame['entity.ItemFrame.name'/556189, l='MpServer', x=-1172.97, y=66.50, z=7346.50], EntityItemFrame['entity.ItemFrame.name'/556190, l='MpServer', x=-1172.97, y=65.50, z=7346.50], EntityItemFrame['entity.ItemFrame.name'/556191, l='MpServer', x=-1172.97, y=67.50, z=7351.50], EntityItemFrame['entity.ItemFrame.name'/556176, l='MpServer', x=-1170.03, y=65.50, z=7351.50], EntityItemFrame['entity.ItemFrame.name'/556177, l='MpServer', x=-1170.03, y=66.50, z=7350.50], EntityItemFrame['entity.ItemFrame.name'/556178, l='MpServer', x=-1170.03, y=67.50, z=7350.50], EntityItemFrame['entity.ItemFrame.name'/556179, l='MpServer', x=-1170.03, y=67.50, z=7351.50], EntityItemFrame['entity.ItemFrame.name'/556180, l='MpServer', x=-1170.03, y=67.50, z=7349.50], EntityItemFrame['entity.ItemFrame.name'/556181, l='MpServer', x=-1170.03, y=66.50, z=7347.50], EntityItemFrame['entity.ItemFrame.name'/556182, l='MpServer', x=-1170.03, y=67.50, z=7347.50], EntityItemFrame['entity.ItemFrame.name'/556183, l='MpServer', x=-1172.97, y=67.50, z=7348.50], EntityItemFrame['entity.ItemFrame.name'/556200, l='MpServer', x=-1172.97, y=67.50, z=7354.50], EntityItemFrame['entity.ItemFrame.name'/556201, l='MpServer', x=-1168.50, y=65.50, z=7354.03], EntityItemFrame['entity.ItemFrame.name'/556202, l='MpServer', x=-1168.50, y=67.50, z=7354.03], EntityItemFrame['entity.ItemFrame.name'/556203, l='MpServer', x=-1169.50, y=67.50, z=7354.03], EntityItemFrame['entity.ItemFrame.name'/556204, l='MpServer', x=-1169.50, y=66.50, z=7354.03], EntityItemFrame['entity.ItemFrame.name'/556205, l='MpServer', x=-1169.50, y=65.50, z=7354.03], EntityPixelmon['Roggenrola'/557229, l='MpServer', x=-1157.50, y=28.00, z=7371.50], EntityItemFrame['entity.ItemFrame.name'/556206, l='MpServer', x=-1172.97, y=67.50, z=7359.50], EntityItemFrame['entity.ItemFrame.name'/556207, l='MpServer', x=-1172.97, y=66.50, z=7359.50], EntityItemFrame['entity.ItemFrame.name'/556192, l='MpServer', x=-1172.97, y=66.50, z=7351.50], EntityItemFrame['entity.ItemFrame.name'/556193, l='MpServer', x=-1172.97, y=67.50, z=7350.50], EntityItemFrame['entity.ItemFrame.name'/556194, l='MpServer', x=-1172.97, y=66.50, z=7350.50], EntityItemFrame['entity.ItemFrame.name'/556195, l='MpServer', x=-1172.97, y=65.50, z=7350.50], EntityItemFrame['entity.ItemFrame.name'/556196, l='MpServer', x=-1172.97, y=67.50, z=7353.50], EntityItemFrame['entity.ItemFrame.name'/556197, l='MpServer', x=-1172.97, y=66.50, z=7353.50], EntityItemFrame['entity.ItemFrame.name'/556198, l='MpServer', x=-1172.97, y=65.50, z=7353.50], EntityItemFrame['entity.ItemFrame.name'/556199, l='MpServer', x=-1172.97, y=66.50, z=7354.50], EntityPixelmonPainting['entity.PixelmonPainting.name'/556216, l='MpServer', x=-1172.50, y=66.50, z=7358.50], EntityItemFrame['entity.ItemFrame.name'/556217, l='MpServer', x=-1173.97, y=71.50, z=7358.50], EntityItemFrame['entity.ItemFrame.name'/556218, l='MpServer', x=-1173.97, y=71.50, z=7357.50], EntityItemFrame['entity.ItemFrame.name'/556219, l='MpServer', x=-1173.97, y=70.50, z=7357.50], EntityItemFrame['entity.ItemFrame.name'/556220, l='MpServer', x=-1173.97, y=71.50, z=7356.50], EntityItemFrame['entity.ItemFrame.name'/556221, l='MpServer', x=-1173.97, y=70.50, z=7356.50], EntityItemFrame['entity.ItemFrame.name'/556222, l='MpServer', x=-1173.97, y=71.50, z=7355.50], EntityItemFrame['entity.ItemFrame.name'/556223, l='MpServer', x=-1173.97, y=70.50, z=7355.50], EntityItemFrame['entity.ItemFrame.name'/556208, l='MpServer', x=-1172.97, y=65.50, z=7359.50], EntityItemFrame['entity.ItemFrame.name'/556209, l='MpServer', x=-1172.97, y=67.50, z=7358.50], EntityItemFrame['entity.ItemFrame.name'/556210, l='MpServer', x=-1172.97, y=65.50, z=7356.50], EntityItemFrame['entity.ItemFrame.name'/556211, l='MpServer', x=-1172.97, y=67.50, z=7357.50], EntityItemFrame['entity.ItemFrame.name'/556212, l='MpServer', x=-1172.97, y=67.50, z=7356.50], EntityItemFrame['entity.ItemFrame.name'/556213, l='MpServer', x=-1172.97, y=66.50, z=7356.50], EntityStatue['Jynx'/556214, l='MpServer', x=-1170.47, y=67.00, z=7359.39], EntityStatue['Zorua'/556215, l='MpServer', x=-1170.55, y=65.00, z=7353.64], EntityItemFrame['entity.ItemFrame.name'/556224, l='MpServer', x=-1173.97, y=70.50, z=7358.50], EntityStatue['Abra'/556225, l='MpServer', x=-1151.50, y=41.00, z=7384.66], EntityStatue['Kadabra'/556226, l='MpServer', x=-1151.72, y=57.00, z=7384.45], EntityStatue['Alakazam'/556227, l='MpServer', x=-1151.94, y=70.00, z=7376.36]]
+	Retry entities: 0 total; []
+	Server brand: Waterfall (git:Waterfall-Bootstrap:1.13-SNAPSHOT:25e3309:212) <- fml,forge,sponge
+	Server type: Non-integrated multiplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.func_72914_a(WorldClient.java:532)
+	at net.minecraft.client.Minecraft.func_71396_d(Minecraft.java:2738)
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:418)
+	at net.minecraft.client.main.Main.main(SourceFile:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_51, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1812869928 bytes (1728 MB) / 2583691264 bytes (2464 MB) up to 6442450944 bytes (6144 MB)
+	JVM Flags: 8 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -Xmx6G -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP 9.42 Powered by Forge 14.23.4.2705 Optifine OptiFine_1.12.2_HD_U_D3 15 mods loaded, 15 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State  | ID              | Version                      | Source                                            | Signature                                |
+	|:------ |:--------------- |:---------------------------- |:------------------------------------------------- |:---------------------------------------- |
+	| UCHIJA | minecraft       | 1.12.2                       | minecraft.jar                                     | None                                     |
+	| UCHIJA | mcp             | 9.42                         | minecraft.jar                                     | None                                     |
+	| UCHIJA | FML             | 8.0.99.99                    | forge-1.12.2-14.23.4.2705.jar                     | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| UCHIJA | forge           | 14.23.4.2705                 | forge-1.12.2-14.23.4.2705.jar                     | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| UCHIJA | betterhud       | 1.4-beta.3                   | betterhud-1.12.2-1.4-beta.3.jar                   | None                                     |
+	| UCHIJA | bettersprinting | 2.1.1                        | BetterSprinting++MC-1.12.2++v2.1.1.jar            | None                                     |
+	| UCHIJA | inventorytweaks | 1.64-dev+release.110.b4fac73 | InventoryTweaks-1.64-dev.jar                      | 55d2cd4f5f0961410bf7b91ef6c6bf00a766dcbe |
+	| UCHIJA | jei             | 4.12.0.215                   | jei_1.12.2-4.12.0.215.jar                         | None                                     |
+	| UCHIJA | lunatriuscore   | 1.2.0.42                     | LunatriusCore-1.12.2-1.2.0.42-universal.jar       | None                                     |
+	| UCHIJA | mousetweaks     | 2.8                          | Mouse-Tweaks-Mod-1.12.1.jar                       | None                                     |
+	| UCHIJA | pixelmon        | 2.4.0                        | PixelmonGenerations-1.12.2-2.4.1-universal.jar    | None                                     |
+	| UCHIJA | schematica      | 1.8.0.169                    | Schematica-1.12.2-1.8.0.169-universal.jar         | None                                     |
+	| UCHIJA | worldedit       | 6.1.10-SNAPSHOT              | worldedit-forge-mc1.12.2-6.1.10-SNAPSHOT-dist.jar | None                                     |
+	| UCHIJA | xaerominimap    | 1.15.8                       | Xaeros_Minimap_1.15.8_Forge_1.12.jar              | None                                     |
+	| UCHIJA | reauth          | 3.6.0                        | reauth-3.6.0.jar                                  | daba0ec4df71b6da841768c49fb873def208a1e3 |
+
+	Loaded coremods (and transformers): 
+Inventory Tweaks Coremod (InventoryTweaks-1.64-dev.jar)
+  invtweaks.forge.asm.ContainerTransformer
+BetterSprintingCore (BetterSprinting++MC-1.12.2++v2.1.1.jar)
+  chylex.bettersprinting.system.core.TransformerEntityPlayerSP
+	GL info: ' Vendor: 'ATI Technologies Inc.' Version: '4.5.13506 Compatibility Profile Context 23.20.15017.3010' Renderer: 'AMD Radeon (TM) R9 360'
+	Launched Version: 1.12.2-forge1.12.2-14.23.4.2705
+	LWJGL: 2.9.4
+	OpenGL: AMD Radeon (TM) R9 360 GL version 4.5.13506 Compatibility Profile Context 23.20.15017.3010, ATI Technologies Inc.
+	GL Caps: Using GL 1.3 multitexturing.
+Using GL 1.3 texture combiners.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Shaders are available because OpenGL 2.1 is supported.
+VBOs are available because OpenGL 1.5 is supported.
+
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: 
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	CPU: 4x AMD FX-8800P Radeon R7, 12 Compute Cores 4C+8G 
